@@ -5,7 +5,14 @@ import { TaskCardTitle } from "./TaskCardTitle";
 import { Tasks } from "./Tasks";
 import { Draggable } from "react-beautiful-dnd";
 
-export const TaskCard: React.VFC = ({
+interface Props {
+  taskCardsList: any;
+  setTaskCardsList: any;
+  taskCard: any;
+  index: number;
+}
+
+export const TaskCard: React.VFC<Props> = ({
   taskCardsList,
   setTaskCardsList,
   taskCard,
